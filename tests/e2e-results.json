@@ -1,0 +1,29 @@
+{
+  "environment": {
+    "astrbot_version": "4.28.2",
+    "installation": "isolated editable local plugin installation",
+    "chat_model": "gpt-4.1-mini through the generic OpenAI-compatible source",
+    "marketplace_installation": "not tested; AstrBot Cloud listing pending"
+  },
+  "voice_search": {
+    "chat_tool": "fish_search_voices",
+    "tool_calls": 1,
+    "public_voice_results": 3
+  },
+  "speech": {
+    "chat_tool": "fish_generate_speech",
+    "tool_calls": 1,
+    "model_header": "s2-pro",
+    "format": "mp3",
+    "reference_id": "not supplied; default voice",
+    "text": "Hello AstrBot",
+    "audio_url": "https://platform2.cdn.acedata.cloud/fish/acf9ee70-e2cd-4c45-bbd1-dfdb501fb2c2.mp3",
+    "media_http_status": 200,
+    "media_content_type": "audio/mpeg",
+    "media_codec": "mp3",
+    "media_duration_seconds": 1.697875,
+    "trace_id_returned": false
+  },
+  "billing_limit": "No trace ID was returned to the tool; application, API, and time can correlate but cannot prove an exact usage-row match.",
+  "scope_limit": "Voice search and short synchronous TTS were run in local AstrBot chat. Voice creation, one-shot cloning, and official marketplace installation were not tested."
+}

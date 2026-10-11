@@ -1,0 +1,13 @@
+name: astrbot_plugin_fish_audio_acedatacloud
+display_name: Fish Audio by Ace Data Cloud
+short_desc: Generate short MP3 speech and find public voices in AstrBot chat.
+desc: Use your Ace Data Cloud key for Fish Audio text-to-speech and public voice discovery.
+version: 0.1.0
+author: acedatacloud
+repo: https://github.com/AceDataCloud/FishAudioAstrBot
+astrbot_version: ">=4.28.2,<5"
+tags:
+  - Fish Audio
+  - text to speech
+  - voice
+  - Ace Data Cloud
