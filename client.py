@@ -9,7 +9,6 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
-
 API_BASE = "https://api.acedata.cloud"
 MODELS = {"s1", "s2-pro", "s2.1-pro"}
 MAX_TEXT_BYTES = 4096
@@ -20,7 +19,7 @@ class _NoRedirect(HTTPRedirectHandler):
 
     def redirect_request(self, request, fp, code, msg, headers, newurl):
         """Reject the redirect and let urllib raise an HTTP error."""
-        return None
+        return
 
 
 OPENER = build_opener(_NoRedirect)

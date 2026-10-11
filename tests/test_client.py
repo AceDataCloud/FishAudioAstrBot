@@ -54,9 +54,11 @@ async def test_tts_sends_model_header_and_one_billable_request():
 
 @pytest.mark.asyncio
 async def test_missing_audio_url_does_not_retry_generation():
-    with patch("client.OPENER.open", return_value=FakeResponse({})) as opening:
-        with pytest.raises(FishError, match="No finished audio URL"):
-            await FishClient("test-key").synthesize("Hello")
+    with (
+        patch("client.OPENER.open", return_value=FakeResponse({})) as opening,
+        pytest.raises(FishError, match="No finished audio URL"),
+    ):
+        await FishClient("test-key").synthesize("Hello")
     assert opening.call_count == 1
 
 
