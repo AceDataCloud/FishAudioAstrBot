@@ -2,7 +2,7 @@
 
 Generate short MP3 speech and find public Fish voices in an AstrBot conversation through your own Ace Data Cloud account. The plugin registers `fish_generate_speech` and `fish_search_voices`.
 
-[简体中文指南](readme/README_zh_Hans.md) · [Fish TTS API](https://platform.acedata.cloud/documents/fish-tts) · [Fish Model Query](https://platform.acedata.cloud/documents/fish-model-query) · [Current prices](https://platform.acedata.cloud/models)
+[简体中文指南](readme/README_zh_Hans.md) · [Fish TTS API](https://platform.acedata.cloud/documents/fish-tts?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_documents_fish_tts) · [Fish Model Query](https://platform.acedata.cloud/documents/fish-model-query?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_documents_fish_model_query) · [Current prices](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_pricing)
 
 ## Find and install
 
@@ -12,7 +12,9 @@ The official AstrBot Cloud listing is pending. After the source release is merge
 
 ## Configure your key
 
-In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications), copy a generation API key from your General application or create a key that permits both `/fish/tts` and `/fish/model`. Check the current Fish Audio price and your balance before synthesizing. Paste the key into the plugin's **Ace Data Cloud API key with Fish Audio access** setting; do not include `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_api_key), copy a generation API key from your General application or create a key that permits both `/fish/tts` and `/fish/model`. Check the current Fish Audio price and your balance before synthesizing. Paste the key into the plugin's **Ace Data Cloud API key with Fish Audio access** setting; do not include `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
 
 Select an active chat model that supports tool calling. Allow `fish_generate_speech` and `fish_search_voices` in the conversation's profile and persona.
 
