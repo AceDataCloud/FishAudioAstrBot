@@ -2,7 +2,7 @@
 
 通过自己的 Ace Data Cloud 账号，在 AstrBot 对话中合成短 MP3 语音、查找公开音色。插件提供 `fish_generate_speech` 和 `fish_search_voices` 两个工具。
 
-[English guide](../README.md) · [Fish TTS API](https://platform.acedata.cloud/documents/fish-tts) · [Fish 音色检索](https://platform.acedata.cloud/documents/fish-model-query) · [当前价格](https://platform.acedata.cloud/models)
+[English guide](../README.md) · [Fish TTS API](https://platform.acedata.cloud/documents/fish-tts?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_documents_fish_tts) · [Fish 音色检索](https://platform.acedata.cloud/documents/fish-model-query?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_documents_fish_model_query) · [当前价格](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_pricing)
 
 ## 搜索与安装
 
@@ -12,7 +12,9 @@ AstrBot Cloud 官方上架尚未完成。源码合并发布后，可在 **Instal
 
 ## 配置 Key
 
-到 [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications) 复制 General application 的生成 API Key，或创建同时允许 `/fish/tts` 和 `/fish/model` 的 Key。调用前检查 Fish Audio 当前价格和余额。在插件设置 **Ace Data Cloud API key with Fish Audio access** 中粘贴 Key 本身；不要加 `Bearer `，也不要使用 `platform-...` 管理 Token。AstrBot WebUI 会遮蔽字段，但数据目录会保存原值，请保护该目录。
+首次使用请先注册并登录；如果应用页还没有通用应用，点击 **初始化通用应用（Initialize General Application）**，再按下面步骤管理密钥。
+
+到 [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudioastrbot_readme_api_key) 复制 General application 的生成 API Key，或创建同时允许 `/fish/tts` 和 `/fish/model` 的 Key。调用前检查 Fish Audio 当前价格和余额。在插件设置 **Ace Data Cloud API key with Fish Audio access** 中粘贴 Key 本身；不要加 `Bearer `，也不要使用 `platform-...` 管理 Token。AstrBot WebUI 会遮蔽字段，但数据目录会保存原值，请保护该目录。
 
 选择支持工具调用的聊天模型，并在当前 Profile 和 Persona 里允许 `fish_generate_speech`、`fish_search_voices`。
 
