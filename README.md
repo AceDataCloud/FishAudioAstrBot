@@ -16,15 +16,13 @@ To install directly from GitHub, open **Plugins → Plugins → Installed → In
 
 ## Configure your key
 
-New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
-
 In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), copy a generation API key from your General application or create a key that permits both `/fish/tts` and `/fish/model`. Check the current Fish Audio price and your balance before synthesizing. Paste the key into the plugin's **Ace Data Cloud API key with Fish Audio access** setting; do not include `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
 
 Select an active chat model that supports tool calling. Allow `fish_generate_speech` and `fish_search_voices` in the conversation's profile and persona.
 
 ### Token screenshots: copy or create a dedicated key
 
-[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), then open **Applications → General application** and initialize it if absent. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/fish/model` and `/fish/tts`; check current entitlement, balance and prices before use.
+[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), then open **Applications → General application**. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/fish/model` and `/fish/tts`; check current entitlement, balance and prices before use.
 
 ![Copy an Ace key or open Manage Keys (redacted)](_assets/tutorial/get-api-key-en.png)
 
