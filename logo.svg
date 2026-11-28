@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Voice message waveform</title>
+  <defs>
+    <linearGradient id="background" x1="16" y1="10" x2="230" y2="231" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C3242"/>
+      <stop offset="1" stop-color="#3B2134"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="65" y1="77" x2="180" y2="171" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC7A3"/>
+      <stop offset="1" stop-color="#FF8A78"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="248" height="248" rx="54" fill="url(#background)"/>
+  <path d="M79 77h89a25 25 0 0 1 25 25v53a25 25 0 0 1-25 25h-49l-30 23c-3 2-6 1-6-3v-20h-4a25 25 0 0 1-25-25v-53a25 25 0 0 1 25-25z" fill="#2B1B26" opacity=".52" transform="translate(0 5)"/>
+  <path d="M79 73h89a25 25 0 0 1 25 25v53a25 25 0 0 1-25 25h-49l-30 23c-3 2-6 1-6-3v-20h-4a25 25 0 0 1-25-25V98a25 25 0 0 1 25-25z" fill="url(#bubble)"/>
+  <g stroke="#713345" stroke-width="9" stroke-linecap="round">
+    <path d="M77 119v12M93 107v35M109 97v53M125 110v28M141 102v45M157 111v26M173 119v11"/>
+  </g>
+  <g fill="none" stroke="#FAC8AF" stroke-linecap="round">
+    <path d="M184 64l6-9" stroke-width="5"/>
+    <path d="M198 74l9-5" stroke-width="5"/>
+  </g>
+</svg>

@@ -50,7 +50,7 @@ class FishClient:
         headers = {
             "Authorization": "Bearer " + self._api_key,
             "Accept": "application/json",
-            "User-Agent": "AceDataCloudAstrBot/0.1.0",
+            "User-Agent": "AceDataCloudAstrBot/0.1.2",
         }
         if payload is not None:
             headers["Content-Type"] = "application/json"

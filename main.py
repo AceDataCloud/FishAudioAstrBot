@@ -18,6 +18,18 @@ class FishAudioPlugin(Star):
         super().__init__(context)
         self.config = config
 
+    @filter.command("fish_ace")
+    async def fish_help(self, event: AstrMessageEvent):
+        """Show the Fish Audio setup link and available tools."""
+        yield event.plain_result(
+            "Fish Audio\n"
+            "Set your Fish Audio API key in the plugin settings. Manage your keys:\n"
+            "https://platform.acedata.cloud/console/applications"
+            "?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen\n"
+            "Use fish_search_voices to find a voice and fish_generate_speech to synthesize text. "
+            "Speech synthesis is billed."
+        )
+
     @filter.llm_tool(name="fish_generate_speech")
     async def fish_generate_speech(
         self,
